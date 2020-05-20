@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b4dcbcf938.js" crossorigin="anonymous"></script>
+    <title>Corona Tracker</title>
+    <link rel="stylesheet" href="frontend/style.css">
+</head>
+<body>
+    <section>
+        <h1 >Corona Tracker: <span id="titulo">Global</span></h1>
+            
+        <div>
+            <h2>Confirmados</h2>
+            <h3 id="confirmed"></h3>
+        </div>
+        <div>
+            <h2>Curados</h2>
+            <h3 id="recovered"></h3>
+        </div>
+        <div>
+            <h2>Mortos</h2>
+            <h3 id="dead"></h3>
+        </div>
+        <div>
+            <select id="paises"></select>
+            <i id="icon" class="fas fa-redo-alt"></i>
+        </div>
+        
+        
+    </section>
+    <label class="switch">
+        <input id="toggle" type="checkbox">
+        <span class="slider round"></span>
+    </label>
+
+
+<script src="../node_modules/axios/dist/axios.js"></script>
+<script src="frontend/main.js" type="module"></script>
+<script src="frontend/toggle.js" type="module"></script>       
+</body>
+</html>
